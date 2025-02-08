@@ -16,11 +16,29 @@ function generateRandom() {
 
 // Function for the higher button
 function higher() {
-   
+   if (random > nextRandom) {
+    window.alert("Higher! You win!");
+   }
+   else if (random < nextRandom) {
+    window.alert("Lower! You lose!");
+   }
+   else {
+    window.alert("Its the same number!");
+   }
 }
+generateRandom();
 
 // Function for the lower button
 function lower() {
+   if (random > nextRandom) {
+    window.alert("Lower! You win!");
+   }
+   else if (random < nextRandom) {
+    window.alert("Higher! You lose!");
+   }
+   else {
+    window.alert("Its the same number!");
+   }
    
 }
 
